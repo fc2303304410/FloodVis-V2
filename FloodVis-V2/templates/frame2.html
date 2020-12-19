@@ -1,0 +1,77 @@
+<!DOCTYPE html style="height:100%;width:100%">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>武汉洪水态势感知可视化系统</title>
+</head>
+<script src="../static/lib/jquery.min.js"></script>
+<script src="../static/lib/echarts.max.js"></script>
+<script src="../static/lib/d3.v3.js"></script>
+<script src="../static/css/bootstrap.css"></script>
+<script src="../static/js/bootstrap.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=1XjLLEhZhQNUzd93EjU5nOGQ"></script>
+<link rel="stylesheet" href="../static/css/base.css">
+<link rel="stylesheet" href="../static/css/bootstrap.css">
+<body style="background-color: #f8f8f8;">
+    <div id="title" style="width: 100%;height: 5%;background-color: white">
+        <p align="center" style="font-size: 30px;" >武汉市洪水态势感知可视化系统</p>
+    </div>
+    <div id="top" style="height: 66.5%;width: 100%;;margin-bottom: 0.5%">
+        <div id="map" style="height: 100%;width: 66.5%;margin-right:0.5%;background-color: white;float: left">
+        </div>
+        <div id="right" style="height: 100%;width: 33%;float: left">
+            <div id="info"  class="list-group" style="height: 49.5%;width: 100%;margin-bottom: 1%; background-color:white;padding: 2% 5% 5% 5%">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>站点</th>
+                      <th>站点ID</th>
+                      <th>坐标</th>
+                        <th>所属河道</th>
+                        <th>所属行政区</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>汉口</td>
+                      <td>0161610010</td>
+                      <td>（114.29289,30.578）</td>
+                         <td>汉江</td>
+                      <td>特别市</td>
+
+                    </tr>
+                    <tr>
+                     <td>舵落口</td>
+                      <td>0161610020</td>
+                      <td>（114.1736,30.6053）</td>
+                         <td>汉江</td>
+                      <td>420100</td>
+                    </tr>
+                    <tr>
+                      <td>宜昌</td>
+                      <td>0161610350</td>
+                      <td>（111.286572,30.691469）</td>
+                         <td>三峡</td>
+                      <td>420500</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4 align="center">所选站点基础信息</h4>
+            </div>
+            <div id="stack_bar" style="height: 49.5%;width: 100%;background-color: white"></div>
+        </div>
+    </div>
+    <div id=" down" style="height: 27.5%;width: 100%;">
+        <div id="paralle" style="width: 66.5%;height: 100%;float: left;margin-right: 0.5%;background-color: white ">
+        </div>
+        <div id="calender" style="width: 33%;height: 100%;float: left ;background-color: white"></div>
+    </div>
+
+</body>
+
+<script src='../static/js/usemodel/parallel.js'></script>
+<script src="../static/js/usemodel/calendar.js"></script>
+<script src="../static/js/usemodel/AxisChange.js"></script>
+<script src="../static/js/usemodel/pointMap.js"></script>
+</html>
